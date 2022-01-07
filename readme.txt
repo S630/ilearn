@@ -9,3 +9,4 @@ db-postgresql  postgresql数据库分支
 db-sqlserver    sqlserver数据库分支
 
 每个分支以文件夹区分开。
+每个分支通过rq合并到主分支上。
