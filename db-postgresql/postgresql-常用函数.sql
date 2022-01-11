@@ -16,7 +16,7 @@ select substring('abcdefg' from '..$') str1
 
 --日期函数
 --当前日期
-select current_date dd,current_time tt, current_timestamp ct ,clock_timestamp() ctt
+select current_date dd,current_time tt, current_timestamp ct ,clock_timestamp() ctt ,now() now
 
 --取日期中的天。date_part(text, timestamp)函数
 select  date_part('year', current_timestamp) y,date_part('month', current_timestamp) m,date_part('day', current_timestamp) d 
