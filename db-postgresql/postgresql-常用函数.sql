@@ -23,3 +23,8 @@ select  date_part('year', current_timestamp) y,date_part('month', current_timest
 
 --取日期中的时分秒 
 select  date_part('hour', current_timestamp) y,date_part('m', current_timestamp) m,date_part('s', current_timestamp) d 
+
+--字符串转日期类型 date,timestamp,time
+select date '2022-01-14' dd,timestamp '2022-01-14 17:45:34' dt,time '10:30' t1,time'14:22' t2
+
+--两个日期的差值。
