@@ -54,3 +54,6 @@ select  timestamp '2022-01-15 03:00'  - timestamp '2022-01-14 02:00' as tt4;
 select  timestamp '2022-01-15 03:00'  - timestamp '2022-01-10 02:00' as tt5;
 select  timestamp '2022-01-15 03:00'  - timestamp '2022-01-10 02:00' as tt6;
 select  timestamp '2023-01-15 03:00'  - timestamp '2022-01-10 02:00' as tt7;
+
+--计算月初/月末 
+select current_date,date_trunc('month',current_date) as monthstart , date_trunc('month',current_date + interval '1 month') - interval '1 day' as monthend
